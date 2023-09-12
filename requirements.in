@@ -1,0 +1,16 @@
+# This file lists the main dependencies
+#
+# To create a proper requirements.txt, use pip-tools:
+#
+#    python -m piptools compile requirements.in
+#
+# (you may need to install piptools first by running 'pip install pip-tools')
+
+
+#general
+pandas
+numpy
+
+#Others
+pywin32
+toml

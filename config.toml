@@ -1,0 +1,11 @@
+# For using standard values, use an empty string "". Only non recurring meetings get placeholders
+
+target_emails = ["zz@xx.no","zz@yy.no"] # All calendars that is to be updated, must be given as ["zz@xx.no","zz@yy.no"]
+subject="Placeholder" # Subject on meetings that will be put in calendar along with the calendar name f"||{subject}|{{calendar_name}||".
+#Given emails above the calendars will get placeholders "||Placeholder|xx||" and "||Placeholder|yy||"..
+
+subject_delete="Placeholder" # Subject on meetings with the calendar name that will be deleted f"||{subject}|{calendar_name}||"
+body ="" # Default value is "Placeholder for meeting in other calendar"
+start_time = ""# # Format '2023-09-05' (YYYY-MM-DD). Default value is today's date
+duration_days = 14 # Number of days in the horizon. Should be an integer. Default value is 7 (one week)
+just_delete_placeholders=false # Set true to delete all placeholders deleted and not update with new meetings
